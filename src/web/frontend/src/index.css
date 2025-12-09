@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+/* MetExtractor Professional Color System */
+@theme {
+  --color-primary-50: #f8fafc;
+  --color-primary-100: #f1f5f9;
+  --color-primary-200: #e2e8f0;
+  --color-primary-300: #cbd5e1;
+  --color-primary-400: #94a3b8;
+  --color-primary-500: #64748b;
+  --color-primary-600: #475569;
+  --color-primary-700: #334155;
+  --color-primary-800: #1e293b;
+  --color-primary-900: #0f172a;
+  --color-primary-950: #020617;
+
+  --color-accent-50: #f0f9ff;
+  --color-accent-100: #e0f2fe;
+  --color-accent-200: #bae6fd;
+  --color-accent-300: #7dd3fc;
+  --color-accent-400: #38bdf8;
+  --color-accent-500: #0ea5e9;
+  --color-accent-600: #0284c7;
+  --color-accent-700: #0369a1;
+  --color-accent-800: #075985;
+  --color-accent-900: #0c4a6e;
+  --color-accent-950: #082f49;
+
+  /* Dark Landing Page Theme (Precision Instrumentation) */
+  --color-dark-bg: #0A0A0A;
+  --color-dark-bg-elevated: #0F0F0F;
+  --color-dark-text: #FAFAFA;
+  --color-dark-muted: #B8B8B8;
+  --color-dark-border: #1A1A1A;
+  --color-dark-accent: #0066CC;
+  --color-dark-accent-hover: #0052A3;
+
+  /* Typography Scale */
+  --line-height-tight: 1.05;
+  --line-height-snug: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+  --line-height-loose: 2;
+
+  /* Layout Constraints */
+  --content-width-narrow: 600px;
+  --content-width-default: 700px;
+  --content-width-wide: 900px;
+  --content-width-container: 1280px;
+
+  /* Transition Timings */
+  --duration-instant: 0ms;
+  --duration-quick: 200ms;
+  --duration-normal: 300ms;
+  --duration-slow: 500ms;
+  --duration-reveal: 600ms;
+
+  /* Focus Ring */
+  --focus-ring-width: 2px;
+  --focus-ring-offset: 2px;
+  --focus-ring-color: #0066CC;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@supports (font-variation-settings: normal) {
+  body {
+    font-family: 'InterVariable', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+}
+
+/* Monaco Editor - Function Highlight Decoration */
+.editor-highlight-function {
+  background-color: rgba(255, 193, 7, 0.25) !important;
+  border-left: 3px solid #fbbf24;
+  padding-left: 4px;
+}
+
+/* Lenis Scroll - Prevent interference with nested scrollable containers */
+.lenis [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis-stopped {
+  overflow: hidden;
+}
+
+/* Shake animation for error states */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-4px); }
+  20%, 40%, 60%, 80% { transform: translateX(4px); }
+}
+
+.animate-shake {
+  animation: shake 0.4s ease-in-out;
+}

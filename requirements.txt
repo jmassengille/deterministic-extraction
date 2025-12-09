@@ -1,0 +1,37 @@
+# Core dependencies for MOX Spec Builder Pipeline
+
+# PDF Processing
+PyMuPDF==1.26.6
+aiofiles==24.1.0
+aiosqlite==0.21.0
+
+# LLM
+openai==2.7.1
+tenacity==8.5.0
+
+# Data Processing
+pydantic==2.9.2
+pyyaml==6.0.2
+python-dotenv==1.0.1
+
+# Image Processing (required for table cropping)
+Pillow==10.4.0
+numpy==1.26.4
+
+# Web-specific dependencies for FastAPI application
+# These are in addition to the core requirements
+
+# FastAPI and server
+fastapi==0.115.0
+uvicorn[standard]==0.32.0
+python-multipart==0.0.12
+
+# Async database and file handling
+aiosqlite==0.21.0
+aiofiles==24.1.0
+
+# SSE support
+sse-starlette==2.1.3
+
+# Templates
+jinja2==3.1.4

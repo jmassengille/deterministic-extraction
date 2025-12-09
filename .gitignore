@@ -1,0 +1,84 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Data directories and runtime files
+Data/
+Equipment Specification Source Document Examples/
+baselines/
+
+# Web app specific
+src/web/frontend/node_modules/
+src/web/frontend/dist/
+src/web/frontend/.vite/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Claude Code local config
+.claude/
+.claude-analysis/
+.playwright-mcp/
+
+# Development context (local only)
+CHANGELOG.md
+
+# BMAD framework and planning
+bmad-core/
+planning/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+
+# Temporary files
+temp_analysis.py
+test_minimal.pdf
+*.png
+logs/
+EXTRACTION_ISSUES.md
+
+# Test/build artifacts
+output/
+test_stage3_output/
+*.db
+
+# Documentation build
+docs/_build/
+docs/_static/
+docs/_templates/

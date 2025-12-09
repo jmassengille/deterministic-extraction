@@ -1,0 +1,14 @@
+# CLI-specific dependencies
+# For local development and testing
+
+# Include base requirements
+-r requirements-docker.txt
+
+# CLI enhancements
+tqdm==4.66.5
+rich==13.9.2
+
+# Future CLI-only OCR engines (when added)
+# docling==x.x.x  # Heavy ML dependencies
+# torch==x.x.x    # If needed for advanced OCR
+# transformers==x.x.x  # If needed for NLP
